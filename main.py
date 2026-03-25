@@ -35,9 +35,5 @@ def agregar_servicio(nuevo: dict):
     }
 
 
-def servicios():
-    return print(servicios_db)
-
-servicios()
 
 
