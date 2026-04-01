@@ -1,11 +1,12 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 from routes.servicios import router as servicios_router
 from routes.auth import router as auth_router
 
 
 app = FastAPI()
-
+#Salu2
 
 @app.get("/")
 def saludar():
