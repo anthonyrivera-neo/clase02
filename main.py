@@ -8,6 +8,13 @@ from routes.auth import router as auth_router
 app = FastAPI()
 #Salu2
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 @app.get("/")
 def saludar():
     return {"mensaje": "¡Hola! Bienvenido a mi API"}
